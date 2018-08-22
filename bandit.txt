@@ -66,3 +66,25 @@ Find: truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
 Level 10:
 ssh -p 2220 bandit10@bandit.labs.overthewire.org
 on prompt: truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+Use base64 to utf-8 online utility
+Find: IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+
+Level 11:
+ssh -p 2220 bandit11@bandit.labs.overthewire.org
+on prompt: IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+python3
+import codecs
+codecs.encode("Gur cnffjbeq vf 5Gr8L4qetPEsPk8htqjhRK8XSP6x2RHh", "rot_13")
+Find: 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+
+Level 12:
+ssh -p 2220 bandit12@bandit.labs.overthewire.org
+on prompt: 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+mkdir /tmp/temp && cp data.txt /tmp/temp && cd /tmp/temp
+Turns out there are a lot of compression things: https://blogcompsci.wordpress.com/2014/10/13/bandit-level-12-→-level-13/
+takaway: use file to get file type info
+Find: 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+
+Level 13:
+ssh -p 2220 bandit13@bandit.labs.overthewire.org
+on prompt: 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
