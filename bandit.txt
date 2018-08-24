@@ -88,3 +88,19 @@ Find: 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
 Level 13:
 ssh -p 2220 bandit13@bandit.labs.overthewire.org
 on prompt: 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+cat sshkey.private
+Get SSH Key: stored in key.txt
+exit
+On Local:
+nano key.txt
+chmod 600 key.txt
+ssh -i key.txt -p 2220 bandit14@bandit.labs.overthewire.org
+cat /etc/bandit_pass/bandit14
+Find: 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+
+Level 14:
+Still logged in using SSH Key
+echo 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e | nc 127.0.0.1 30000
+Find: BfMYroe26WYalil77FoDi9qh59eK5xNr
+
+Level 15:
